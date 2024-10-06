@@ -11,7 +11,7 @@ let listDataAsset={};
 let devices="";
 
 const detailAssset = document.getElementById("detalleEquipo");
-
+initMap();
 
 function initMap() {
     const ubicacion = { lat: 20.5005701, lng: -99.8540223 }; 
