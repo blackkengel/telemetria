@@ -52,7 +52,7 @@ function getData(initData) {
         devices:devices,
         metodo:"getData"
     };
-    fetch(hostData+'newState', {
+    fetch(hostData+'api/getData.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ function deleteFileSystem(activo) {
         activo:activo,
         metodo:"deleteFyleSystem"
     };
-    fetch(hostData+'newState', {
+    fetch(hostData+'api/getData.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

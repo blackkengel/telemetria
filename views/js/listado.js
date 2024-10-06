@@ -120,7 +120,7 @@ function detailVehicle(activo){
         activo:activo,
         metodo:"getDetailVehicle"
     };
-    fetch(hostData+'newState', {
+    fetch(hostData+'api/getData.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
