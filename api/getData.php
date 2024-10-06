@@ -9,7 +9,8 @@ date_default_timezone_set('America/Mexico_City');
 include_once("getDataApi.php");
 
 class getDataMaster {
-    private $directorio  = __DIR__ . '/cache/cliente/';
+    // private $directorio  = __DIR__ . '/cache/cliente/';
+    private $directorio  = '/tmp/cache/cliente/';
     private $idCliente   = 0;
     private $dataActivos = [];
 
