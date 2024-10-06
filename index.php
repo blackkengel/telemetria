@@ -36,8 +36,8 @@
     let hostData="<?php echo $hostData; ?>";
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo $variableTest; ?>"></script>
 <script type="text/javascript" src="views/js/mapa.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo $variableTest; ?>&callback=initMap"></script>
 <?php
     include_once("views/view/components/structureBottom.php");
 ?>
