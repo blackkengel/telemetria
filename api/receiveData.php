@@ -8,7 +8,7 @@ header("Access-Control-Expose-Header: Content-Disposition");
 date_default_timezone_set('America/Mexico_City');
 
 $directorio = __DIR__ . '/cache/cliente/'; // Ruta de la carpeta
-
+chmod('/app/api', 0775);
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     // http_response_code(405);
     echo json_encode(["mensaje" => "Método no permitido. Se requiere POST."]);
