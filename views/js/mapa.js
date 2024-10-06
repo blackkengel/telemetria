@@ -41,7 +41,7 @@ function initPoint(){
            }
         getData(0)
         count++;
-    }, 1000000000);
+    }, 5000);
 }
 
 function getData(initData) {
