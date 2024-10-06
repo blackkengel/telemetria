@@ -1,0 +1,40 @@
+.contend {
+    padding: 5%;
+}
+
+table#listadoActivos {
+    border: 1px solid #c5c5c5;
+    margin: 0px 0px 5px 0px;
+}
+
+#listadoActivos_wrapper {
+    height: 100%;
+    overflow-x: auto;
+    overflow-Y: auto;
+    white-space: nowrap;
+}
+
+.conted-icon-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-size: .9rem;
+}
+
+.text-info-list {
+    font-size: .9rem;
+    font-weight: 500;
+}
+div#listadoActivos_filter {
+    margin: 0px 0px 10px 0px;
+}
+
+div#listadoActivos_length {
+    margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 768px) {
+    h3.title-activos {
+        text-align: center;
+    }
+}

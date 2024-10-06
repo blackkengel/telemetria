@@ -1,0 +1,181 @@
+
+.content-listado {
+    width: 35%;    
+    padding: 6px;
+}
+
+
+table#listadoActivos {
+    border: 1px solid #1d3154b3;
+    margin: 0px 0px 5px 0px;
+}
+
+#listadoActivos_wrapper {
+    height: 100%;
+    overflow-x: auto;
+    overflow-Y: auto;
+    white-space: nowrap;
+}
+#listadoActivos_info {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+div#listadoActivos_filter {
+    margin: 0px 0px 10px 0px;
+}
+
+div#listadoActivos_length {
+    margin: 0px 0px 10px 0px;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+/* name */
+
+.list-name-status {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list-name {
+    width: 150px;
+    min-width: 100px;
+    padding: 5px 0px 0px 5px;
+    font-size: .75rem;;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-status {
+    width: 20%;
+    min-width: 70px;
+    padding: 5px 0px;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.status-on{
+    color: #3bcd3b;
+}
+
+.status-off{
+    color: #e03d3d;
+}
+
+.list-matricula-button {
+    background: #1d3154;
+    border: 0;
+    border-radius: 7px;
+    padding: 1px 6px 2px 6px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+/* date */
+.content-fecha {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.fecha {
+    width: 100%;
+}
+
+.hora {
+    width: 100%;
+}
+/* ubication */
+.content-ubication {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.contend-coords {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+/* actions */
+.conted-icon-list {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.text-info-list {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+th.header-data.sorting {
+    width: 20% !important;
+}
+
+th.header-data.actions.sorting {
+    width: 10% !important;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 3px 3px;
+}
+
+th.header-text {
+    font-size: small;
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+.icon-list {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.list-matricula {
+    padding: 0px 5px!important;
+    line-height: 16px;
+}
+
+@media (max-width: 768px) {
+    .content-listado {
+        width: 100%;    
+        padding: 1px;
+    }
+    .content-listado {
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+    .list-name-status {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .list-name{
+        width: 120px;
+    }
+    .list-status {
+        width: 120px;
+        padding: 5px 5px;
+    }
+    .conted-icon-list {
+        display: flex;
+        justify-content: center;
+    }    
+    table#listadoActivos {
+        border-top: 3px solid #1d3154;
+        border-bottom: 3px solid #1d3154;
+    }
+}

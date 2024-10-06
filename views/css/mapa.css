@@ -1,0 +1,89 @@
+.content-mapa {
+    width: 65%;
+    height: 89.5vh;
+    border-left: 2px solid #1d3154b3;
+}
+
+div#map {
+    width: 100%;
+    height: 100%;
+}
+
+.gm-style-iw-chr {
+    display: none;
+}
+
+.gm-style-iw-d {
+    padding: 2px 1px;
+    margin: 0px;
+    max-height: 25px;
+    height: 25px;
+    overflow: unset !important;
+    background: #1d3154;
+}
+.gm-style .gm-style-iw-tc::after {
+    background: #1d3154
+}
+
+/* marker */
+.etiqueta-map {
+    font-size: 12px;
+    padding: 4px 0px 0px 0px;
+    font-weight: 500;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+}
+.gm-style-iw.gm-style-iw-c {
+    width: 65px;
+    padding: 0px;
+}
+
+.marker-red {
+    color: #e2261c;
+}
+
+/* modal */
+
+button.btn-close {
+    width: 8%;
+}
+#modalLabelheader {
+    width: 92%;
+}
+
+
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    width: 30%;
+    min-width: 350px;
+    height: 500px;
+    z-index: 999999999999999999;
+    cursor: move;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fbfbfb;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+
+@media (max-width: 768px) {
+    .content-mapa {
+        width: 100%;
+        height: 100vh;
+        border-top: 3px solid #1d3154;
+    }
+}

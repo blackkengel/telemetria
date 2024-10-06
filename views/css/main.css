@@ -1,0 +1,114 @@
+/* Header */
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: transparent !important;
+    padding: 0px;
+}
+.container-fluid {
+    background: #1d3154;
+    padding: 0px 1.5rem 0px 2px;
+}
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    display: flex;
+    justify-content: flex-end !important;
+    width: 95%;
+}
+
+.navbar-nav .nav-link {
+    color: #fefefe;
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+.navbar-nav .nav-link.active{
+    color: #fefefe;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0px 10px;
+    border-bottom: 2px solid #e2261d;
+}
+
+/* structure mapa */
+.content-elements {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #1d3154b3;
+}
+
+/* Generic */
+.oculto{
+    display:none!important;
+}
+
+.modal-body {
+    padding: 10px;
+    cursor: copy;
+}
+.tr-grid-detail{
+    width: 100%;
+    border-bottom: 1px solid #1d31541a;
+}
+
+.title-grid-detail{
+    width: 35%;
+    font-size: 13px!important;
+    font-weight: 600!important;
+    color: #000;
+    padding: 0px 10px;    
+}
+
+.data-grid-detail{
+    width: 65%;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+    padding: 0px 10px;
+}
+.table-detail{
+    width: 100%;
+}
+.body-table-detail{
+    border: 1px solid #1d31541a;
+    width: 90%;
+}
+.modal-title{
+    color: #000000;
+    text-align: center;
+    font-size: large;
+    text-transform: capitalize !important;
+}
+button.navbar-toggler {
+    border: 2px solid #1d3154;
+    background: #fff;
+}
+button.navbar-toggler.collapsed {
+    width: 2em;
+    padding: 0px;
+    background: #fff;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        background: #1d3154;
+        padding: 3px 0px 0px 3px;
+    }
+    .content-elements {
+        display: flex;
+        border: 3px solid #1d3154;
+        flex-wrap: wrap;
+    }
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        width: 100%;
+    }
+    button.navbar-toggler {
+        margin-right: 10px;
+    }
+    .navbar-nav .nav-link.active {
+        padding: 5px 10px;
+    }
+}
