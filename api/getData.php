@@ -32,7 +32,7 @@ class getDataMaster {
                 'activos' => $this->dataActivos,
                 'message' => ""
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }else{
             /// se trae toda la data de fyleSystem
@@ -40,7 +40,7 @@ class getDataMaster {
                 'success' => false,
                 'message'=> "No hay fileSystem del cliente:".$this->idCliente
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }  
     }
@@ -50,7 +50,7 @@ class getDataMaster {
             'success' => true,
             'message' => "Se elimino FileSystem de ".$device,
         ];
-        http_response_code(200);
+        // http_response_code(200);
         echo json_encode($data);
 
     }
@@ -63,21 +63,21 @@ class getDataMaster {
                 'activo' => $dataActivo,
                 'message' => ""
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }else{
             $data = [
                 'success' => false,
                 'message'=> "No hay fileSystem del cliente:".$this->idCliente
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }  
     }
 }
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    http_response_code(200);
+    // http_response_code(200);
     $data = [
         'success' => false,
         'message'=> "Método no permitido. Se requiere POST."
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 $dataInput = json_decode(file_get_contents("php://input"));
 if (!isset($dataInput->idCliente)){
-    http_response_code(200);
+    // http_response_code(200);
     $data = [
         'success' => false,
         'message'=> "Datos inválidos. falta dato idCliente"

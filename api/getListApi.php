@@ -10,7 +10,7 @@ include_once("getDataApi.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    http_response_code(200);
+    // http_response_code(200);
     $data = [
         'success' => false,
         'message'=> "Método no permitido. Se requiere POST."
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 $dataInput = json_decode(file_get_contents("php://input"));
 if (!isset($dataInput->idCliente)){
-    http_response_code(200);
+    // http_response_code(200);
     $data = [
         'success' => false,
         'message'=> "Datos inválidos. falta dato idCliente"

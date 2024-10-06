@@ -32,7 +32,7 @@ class getDataApi {
                 'success' => false,
                 'message'=> "No hay fileSystem del cliente:".$this->idCliente
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }  
         $fileSystemApi=$this->directorioKey.$this->idCliente.".json";
@@ -44,7 +44,7 @@ class getDataApi {
                 'success' => false,
                 'message'=> "No hay fileSystem del cliente:".$this->idCliente
             ];
-            http_response_code(200);
+            // http_response_code(200);
             echo json_encode($data);
         }
     }

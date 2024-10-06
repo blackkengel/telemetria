@@ -10,7 +10,7 @@ date_default_timezone_set('America/Mexico_City');
 $directorio = __DIR__ . '/cache/cliente/'; // Ruta de la carpeta
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    http_response_code(405);
+    // http_response_code(405);
     echo json_encode(["mensaje" => "Método no permitido. Se requiere POST."]);
     exit;
 }
@@ -18,14 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 $input = json_decode(file_get_contents("php://input"), true);
 
 if (is_null($input)) {
-    http_response_code(400);
+    // http_response_code(400);
     echo json_encode(["mensaje" => "Datos inválidos. Asegúrese de enviar JSON."]);
     exit;
 }
 
 
 if (!isset($input['idclient'])){
-	http_response_code(400);
+	// http_response_code(400);
     echo json_encode(["mensaje" => "Datos inválidos. fata dato idclient."]);
     exit;
 }
@@ -59,7 +59,7 @@ $response = [
     "mensaje" => "Datos recibidos correctamente",
 ];
 
-http_response_code(200);
+// http_response_code(200);
 echo json_encode($response);
 
 function formatearFlotante($numero) {
