@@ -11,7 +11,7 @@
         <li class="nav-item">
           <a href="mapa" class="nav-link nav-header 
            <?php 
-            if($_SERVER["REQUEST_URI"]=="/connectgps/mapa"){
+            if($_SERVER["SCRIPT_NAME"]=="/index.php"){
               echo "active";
             }
           ?>
@@ -20,7 +20,7 @@
         <li class="nav-item">
           <a  href="activos" class="nav-link nav-header
             <?php 
-            if($_SERVER["REQUEST_URI"]=="/connectgps/activos"){
+            if($_SERVER["SCRIPT_NAME"]=="/activos.php"){
               echo "active";
             }
           ?>
