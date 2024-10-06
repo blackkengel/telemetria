@@ -33,7 +33,7 @@ if (!isset($input['idclient'])){
 $directorio.=$input['idclient'];
 $fileSystem=$directorio."/".$input['device'].".json";
 if (!is_dir($directorio)) {
-    if (mkdir($directorio, 0777, true)) {
+    if (mkdir($directorio, 0775, true)) {
         print_r("La carpeta fue creada exitosamente.");
 
     } else {
