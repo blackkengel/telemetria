@@ -1,9 +1,9 @@
 RewriteEngine On
 
-RewriteRule ^apiData$ api/receiveData.php
-RewriteRule ^newState$ api/getData.php
-RewriteRule ^activos$ activos.php
-RewriteRule ^mapa$ index.php
+# RewriteRule ^apiData$ api/receiveData.php
+# RewriteRule ^newState$ api/getData.php
+# RewriteRule ^activos$ activos.php
+# RewriteRule ^mapa$ index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ rewrite.php
