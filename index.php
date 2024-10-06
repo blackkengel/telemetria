@@ -2,6 +2,9 @@
     include_once("views/view/components/structureTop.php");
     include_once("views/view/components/modalDetail.php");
     include_once('config/config.php');
+    echo"<pre>";
+    var_dump($_SERVER);
+    die();
 ?>
 <div class="content">
     <div class="content-elements">
