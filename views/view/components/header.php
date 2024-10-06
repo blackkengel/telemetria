@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a href="mapa" class="nav-link nav-header 
+          <a href="/" class="nav-link nav-header 
            <?php 
             if($_SERVER["SCRIPT_NAME"]=="/index.php"){
               echo "active";
@@ -18,7 +18,7 @@
           " id="nav-0">Mapa</a>
         </li>
         <li class="nav-item">
-          <a  href="activos" class="nav-link nav-header
+          <a  href="activos.php" class="nav-link nav-header
             <?php 
             if($_SERVER["SCRIPT_NAME"]=="/activos.php"){
               echo "active";
