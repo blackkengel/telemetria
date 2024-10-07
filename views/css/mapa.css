@@ -86,4 +86,11 @@ button.btn-close {
         height: 100vh;
         border-top: 3px solid #1d3154;
     }
+    .modal-background {
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        min-width: 100%;
+        height: 500px;
+    }
 }
