@@ -88,9 +88,9 @@ button.btn-close {
     }
     .modal-background {
         top: 50%;
-        left: 0%;
-        width: 100%;
-        min-width: 100%;
+        left: 5%;
+        width: 90%;
+        min-width: 90%;
         height: 500px;
     }
 }
