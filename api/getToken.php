@@ -9,7 +9,7 @@ date_default_timezone_set('America/Mexico_City');
 
 
 class getTocken {
-    private $directorio     = __DIR__ . '/data/token/cliente/';
+    private $directorio     = '/tmp/data/token/cliente/';
     private $directorioKey  = __DIR__ . '/data/keys/cliente/';
     private $clientes       = [45987];
     private $url            = "https://api.service24gps.com/api/v1/gettoken";

@@ -10,7 +10,7 @@ date_default_timezone_set('America/Mexico_City');
 
 
 class getDataApi {
-    private $directorio  = __DIR__ . '/data/token/cliente/';
+    private $directorio  = '/tmp/data/token/cliente/';
     private $directorioKey  = __DIR__ . '/data/keys/cliente/';
     private $idCliente   = 0;
     private $token       = "";
